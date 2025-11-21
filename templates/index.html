@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LLM Q&A Web App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
     <div class="container">
-        <h1>LLM Question & Answering System</h1>
+        <h1 class="title">LLM Q&A Assistant</h1>
+        <p class="subtitle">Ask anything. Get instant AI-powered responses.</p>
 
-        <form method="POST">
-            <textarea name="question" placeholder="Enter your question..." required></textarea>
-            <button type="submit">Ask</button>
+        <form method="POST" class="form-card">
+            <textarea name="question" placeholder="Type your question here..." required></textarea>
+            <button type="submit">💬 Ask Question</button>
         </form>
 
         {% if processed %}
-        <div class="box">
-            <h3>Processed Question</h3>
+        <div class="box fade-in">
+            <h3>🔍 Processed Question</h3>
             <p>{{ processed }}</p>
         </div>
         {% endif %}
 
         {% if raw_response %}
-        <div class="box">
-            <h3>LLM Raw Response</h3>
+        <div class="box fade-in">
+            <h3>🧠 LLM Raw Response</h3>
             <p>{{ raw_response }}</p>
         </div>
         {% endif %}
 
         {% if answer %}
-        <div class="box">
-            <h3>Final Answer</h3>
+        <div class="box fade-in highlight">
+            <h3>✨ Final Answer</h3>
             <p>{{ answer }}</p>
         </div>
         {% endif %}

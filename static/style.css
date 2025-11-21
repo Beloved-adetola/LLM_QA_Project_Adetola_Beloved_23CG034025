@@ -1,0 +1,101 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6fb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    background: #f8faff;
+    box-shadow: 0 0 4px rgba(0,123,255,0.3);
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #0056d2;
+    transform: translateY(-2px);
+}
+
+.box {
+    background: #f9f9f9;
+    border-left: 4px solid #007bff;
+    padding: 18px 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.box.highlight {
+    border-left-color: #28a745;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+}
