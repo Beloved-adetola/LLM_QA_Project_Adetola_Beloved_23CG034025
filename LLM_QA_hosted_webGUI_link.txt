@@ -1,4 +1,4 @@
-Name: 
-Matric Number: 
+Name: Adetola Beloved Inioluwa
+Matric Number: 23CG034025
 Live Hosted URL: 
-GitHub Repository Link:
+GitHub Repository Link: https://github.com/Beloved-adetola/LLM_QA_Project_Adetola_Beloved_23CG034025
